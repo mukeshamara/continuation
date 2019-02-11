@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="ee" class="com.example.Employee">
+</bean>
+   <bean id="starthandle" class="com.example.StartHandler"></bean>
+      <bean id="stophandle" class="com.example.StopHandler"></bean>
+         <bean id="refreshhandle" class="com.example.RefreshHandler"></bean>
+</beans>

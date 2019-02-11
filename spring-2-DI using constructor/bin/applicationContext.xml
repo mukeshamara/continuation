@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="e" class="com.example.Employee">
+<constructor-arg value="Janu" type="String"></constructor-arg>
+<constructor-arg value="22" type="int"></constructor-arg>
+<constructor-arg>
+<list>
+<value>Titanic</value>
+<value>Romeo</value>
+<value>Inception</value>
+</list>
+</constructor-arg>
+
+<constructor-arg><ref bean="addr"/></constructor-arg>
+</bean>
+
+<bean id="addr" class="com.example.Address">
+<constructor-arg value="Chennai" type="String"></constructor-arg>
+<constructor-arg value="TamilNadu" type="String"></constructor-arg>
+</bean>
+
+
+</beans>

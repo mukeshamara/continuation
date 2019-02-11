@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="e" class="com.example.Employee">
+<property name="message1" value="A"></property>
+<property name="message2" value="B"></property>
+</bean>
+<bean id="ee" class="com.example.Employee1" parent="e">
+<property name="message3" value="C"></property>
+</bean>        
+</beans>

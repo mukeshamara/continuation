@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util
+http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+        <bean id="loc" class="com.example.Location">
+        <property name="hm">        
+        <util:map map-class="java.util.TreeMap">
+        <entry key="100" value="USA"></entry>
+        <entry key="22" value="India"></entry>
+         <entry key="64" value="Pakistan"></entry>
+        <entry key="33" value="Nepal"></entry>
+        <entry key="84" value="Pakistan"></entry>
+         <entry key="44" value="Pakistan"></entry>
+        </util:map>
+        </property>
+</bean> 
+</beans>
